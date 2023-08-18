@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Concepts Example</title>
+</head>
+<body>
+  <script>
+    // a. String methods
+    const sampleString = "Hello, World!";
+    console.log("Length:", sampleString.length);
+    console.log("Uppercase:", sampleString.toUpperCase());
+    console.log("Substring:", sampleString.substring(0, 5));
+    console.log("Index of 'World':", sampleString.indexOf("World"));
+    console.log("Replaced text:", sampleString.replace("Hello", "Hi"));
+
+    // b. Number methods
+    const sampleNumber = 123.456;
+    console.log("Fixed to 2 decimals:", sampleNumber.toFixed(2));
+    console.log("Exponential notation:", sampleNumber.toExponential());
+    console.log("Rounded:", Math.round(sampleNumber));
+    console.log("Square root:", Math.sqrt(sampleNumber));
+    console.log("Random number between 0 and 1:", Math.random());
+
+    // c. Array methods
+    const sampleArray = [1, 2, 3, "four", "five"];
+    console.log("Array length:", sampleArray.length);
+    console.log("Join as string:", sampleArray.join(", "));
+    console.log("Last element:", sampleArray[sampleArray.length - 1]);
+    console.log("Added to end:", sampleArray.concat(["six", 7]));
+    console.log("Removed from start:", sampleArray.slice(1));
+
+    // d. Date methods
+    const currentDate = new Date();
+    console.log("Current date:", currentDate.toString());
+    console.log("Year:", currentDate.getFullYear());
+    console.log("Month:", currentDate.getMonth());
+    console.log("Day of the week:", currentDate.getDay());
+    console.log("Milliseconds since epoch:", currentDate.getTime());
+
+    // e. Function methods
+    function greet(name) {
+      return "Hello, " + name + "!";
+    }
+    console.log(greet("Alice"));
+
+    const sum = function(a, b) {
+      return a + b;
+    };
+    console.log("Sum:", sum(5, 3));
+  </script>
+</body>
+</html>
+

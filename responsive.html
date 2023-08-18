@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--Set width of viewport (user's visible area of webpage) to width of device's screen, with intial zoom at 1:1 scale-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    /*Flexbox styling for responsive layout*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /*Padding and borders included in an element's total width to prebent horizontal scrollbars*/
+  * {
+    box-sizing: border-box;
+  }
+  
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #fff;
+}
+  
+  .container {
+    /*max-width so content is readable on larger screens while still adapting to smaller screens*/
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /*Flexbox styling for responsive layout*/    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  img {
+    /*Image will scale down to fit container without overflowing*/
+    max-width: 100%;
+    height: auto;
+  }
+
+  /*Change the padding of .container to 10px when screen width is 600 pixels or less*/
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  }
+  
+  footer {
+    padding: 10px;
+  }
+  
+  /* Media query for screens up to 600px */
+  @media (max-width: 600px) {
+    footer {
+      
+      margin: 0;
+      padding: 5px;
+    }
+  }
+  
+  .footer-a {
+    text-decoration: none;
+    color: black;
+  }
+}
+</style>
+
+<title>Responsive Landscape Design</title>
+</head>
+<body>
+<div class="navbar">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Contact</a>
+</div>
+  <div class="container">
+    <img src="images/topiary.jpg" alt="Topiary">
+    <h1>Responsive Landscape Design</h1>
+    <p>Beautiful, flexible designs suitable for both large and small outdoor spaces.</p>
+    <p>Visually appealing, easy to navigate, and functional regardless of garden size.</p>
+  </div>
+  <footer>
+    Image by <a class = footer-a href="https://pixabay.com/users/ykaiavu-7068951/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7460988">Yves</a> from Pixabay
+  </footer>
+</body>
+</html>
+
